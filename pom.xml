@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId></groupId>
-    <artifactId></artifactId>
+    <groupId>leanderk.izou.weatheraddon</groupId>
+    <artifactId>weatheraddon</artifactId>
     <packaging>jar</packaging>
-    <version></version>
-    <name></name>
+    <version>0.5-SNAPSHOT</version>
+    <name>Leander Kurscheidt</name>
 
     <properties>
-        <plugin.id></plugin.id>
-        <plugin.class>path.to.the.zipfileManager</plugin.class>
-        <plugin.version></plugin.version>
-        <plugin.provider></plugin.provider>
-        <plugin.dependencies />
+        <plugin.id>leanderk.izou.weatheraddon</plugin.id>
+        <plugin.class>leanderk.izou.weatheraddon.ZipFileManager</plugin.class>
+        <plugin.version>0.5</plugin.version>
+        <plugin.provider>Leander Kurscheidt</plugin.provider>
+        <plugin.dependencies>leanderk.izou.tts</plugin.dependencies>
     </properties>
 
     <dependencies>
@@ -25,9 +25,19 @@
             <version>0.9.9.4-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>leanderk.izou.tts</groupId>
+            <artifactId>tts</artifactId>
+            <version>0.9-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.fedy2</groupId>
+            <artifactId>yahoo-weather-java-api</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 
@@ -35,6 +45,14 @@
         <repository>
             <id>Izou</id>
             <url>https://raw.github.com/intellimate/Izou/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>IzouTTS</id>
+            <url>https://raw.github.com/LeanderK/IzouTTS/mvn-repo/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
