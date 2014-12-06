@@ -29,7 +29,9 @@ public class WeatherAddon extends AddOn{
 
     @Override
     public ContentGenerator[] registerContentGenerator() {
-        return null;
+        ContentGenerator[] contentGenerators = new ContentGenerator[1];
+        contentGenerators[0] = new WeatherContentGenerator(getContext());
+        return contentGenerators;
     }
 
     @Override

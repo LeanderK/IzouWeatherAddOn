@@ -9,6 +9,7 @@ import intellimate.izou.resource.Resource;
 import intellimate.izou.system.Context;
 import intellimate.izou.system.Identification;
 import intellimate.izou.system.IdentificationManager;
+import leanderk.izou.weatheraddon.weather.WeatherChannel;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
@@ -44,7 +45,7 @@ public class WeatherContentGenerator extends ContentGenerator{
     @Override
     public List<Resource> announceResources() {
         Optional<Identification> identification = identificationManager.getIdentification(this);
-        Resource<String> resource = new Resource<>(RESOURCE_ID);
+        Resource<WeatherChannel> resource = new Resource<>(RESOURCE_ID);
         identification.ifPresent(resource::setProvider);
         return Arrays.asList(resource);
     }
@@ -61,11 +62,15 @@ public class WeatherContentGenerator extends ContentGenerator{
         if(woeid == null || service == null) return null;
         Channel channel = null;
         try {
-            channel = service.getForecast("2502265", DegreeUnit.CELSIUS);
+            channel = service.getForecast(woeid, DegreeUnit.CELSIUS);
         } catch (JAXBException | IOException e) {
             context.logger.getLogger().error("Error while trying to create YahooWeatherService", e);
         }
-        System.out.println(channel.getDescription());
-        return null;
+        WeatherChannel weatherChannel = new WeatherChannel(channel);
+        Resource<WeatherChannel> resource = new Resource<>(RESOURCE_ID);
+        Optional<Identification> identification = identificationManager.getIdentification(this);
+        identification.ifPresent(resource::setProvider);
+        resource.setResource(weatherChannel);
+        return Arrays.asList(resource);
     }
 }
