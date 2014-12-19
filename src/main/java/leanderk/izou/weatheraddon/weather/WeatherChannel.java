@@ -9,14 +9,20 @@ import java.util.stream.Collectors;
  * Represents Information about the Weather.
  * This class wraps com.github.fedy2.weather.data.Channel, to make it easier to use.
  */
-public class WeatherChannel extends Channel{
+public class WeatherChannel{
+
+    private com.github.fedy2.weather.data.Channel channel;
+
+    public WeatherChannel(Channel channel) {
+        this.channel = channel;
+    }
 
     /**
      * returns the forecast for today
      * @return an instance of forecast describing the remaining day
      */
     public Forecast getForecastForToday() {
-        return (leanderk.izou.weatheraddon.weather.Forecast) getItem().getForecasts().get(0);
+        return new Forecast(channel.getItem().getForecasts().get(0));
     }
 
     /**
@@ -24,8 +30,12 @@ public class WeatherChannel extends Channel{
      * @return a list of forecasts
      */
     public List<Forecast> getForecasts() {
-        return getItem().getForecasts().stream()
-                .map(forecast -> (leanderk.izou.weatheraddon.weather.Forecast) forecast)
+        return channel.getItem().getForecasts().stream()
+                .map(Forecast::new)
                 .collect(Collectors.toList());
+    }
+
+    public Channel getChannel() {
+        return channel;
     }
 }

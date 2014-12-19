@@ -22,6 +22,7 @@
 				<exclude>intellimate.izou:Izou</exclude>
 				<exclude>ro.fortsoft.pf4j:pf4j</exclude>
 				<exclude>org.slf4j:slf4j-jdk14</exclude>
+				<exclude>org.apache.logging.log4j</exclude>
 			</excludes>
 		</dependencySet>
 	</dependencySets>

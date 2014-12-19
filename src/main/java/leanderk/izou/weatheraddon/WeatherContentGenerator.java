@@ -65,12 +65,12 @@ public class WeatherContentGenerator extends ContentGenerator{
             channel = service.getForecast(woeid, DegreeUnit.CELSIUS);
         } catch (JAXBException | IOException e) {
             context.logger.getLogger().error("Error while trying to create YahooWeatherService", e);
+            return null;
         }
-        WeatherChannel weatherChannel = new WeatherChannel(channel);
         Resource<WeatherChannel> resource = new Resource<>(RESOURCE_ID);
         Optional<Identification> identification = identificationManager.getIdentification(this);
         identification.ifPresent(resource::setProvider);
-        resource.setResource(weatherChannel);
+        resource.setResource(new WeatherChannel(channel));
         return Arrays.asList(resource);
     }
 }

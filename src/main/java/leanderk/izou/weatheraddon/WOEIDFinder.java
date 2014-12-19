@@ -70,12 +70,6 @@ public class WOEIDFinder {
             context.logger.getLogger().error("Unable to open WOEID-Query URL", e);
             return null;
         }
-        try {
-            System.out.println(((HttpURLConnection) connection).getResponseCode());
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         try {
             return parseXML(connection.getInputStream());

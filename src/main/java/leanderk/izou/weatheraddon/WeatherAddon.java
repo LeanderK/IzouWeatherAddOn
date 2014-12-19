@@ -46,7 +46,9 @@ public class WeatherAddon extends AddOn{
 
     @Override
     public OutputExtension[] registerOutputExtension() {
-        return null;
+        OutputExtension[] outputExtensions = new OutputExtension[1];
+        outputExtensions[0] = new WeatherTTSOutputExtension(getPropertiesContainer(), getContext());
+        return outputExtensions;
     }
 
     @Override
