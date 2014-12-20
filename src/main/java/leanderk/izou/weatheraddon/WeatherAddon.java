@@ -12,6 +12,9 @@ import intellimate.izou.output.OutputPlugin;
  */
 public class WeatherAddon extends AddOn{
     public static final String ID = WeatherAddon.class.getCanonicalName();
+    public static final String EVENT_WEATHER_FULL = WeatherAddon.class.getCanonicalName() + ".FullWeather";
+    public static final String EVENT_WEATHER_TODAY = WeatherAddon.class.getCanonicalName() + ".FullWeather";
+    public static final String EVENT_WEATHER_FORECAST = WeatherAddon.class.getCanonicalName() + ".FullWeather";
 
     public WeatherAddon() {
         super(ID);

@@ -52,7 +52,10 @@ public class WeatherContentGenerator extends ContentGenerator{
 
     @Override
     public List<String> announceEvents() {
-        return Arrays.asList(Event.FULL_WELCOME_EVENT);
+        return Arrays.asList(Event.FULL_WELCOME_EVENT,
+                WeatherAddon.EVENT_WEATHER_FORECAST,
+                WeatherAddon.EVENT_WEATHER_FULL,
+                WeatherAddon.EVENT_WEATHER_TODAY);
     }
 
     @Override
