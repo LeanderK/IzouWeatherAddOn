@@ -12,16 +12,47 @@ import leanderk.izou.weatheraddon.weather.Forecast;
 import leanderk.izou.weatheraddon.weather.WeatherChannel;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.ZoneId;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
 /**
- * Created by LeanderK on 05/12/14.
+ * It will speak the weather.
+ * <p>
+ * This class produce different results for different scenarios:
+ * <table>
+ *     <tr>
+ *         <td>
+ *             Event.FullWelcomeEvent & Response
+ *         </td>
+ *         <td>
+ *             The current weather (and if before 15:00 the forecast for today).
+ *         </td>
+ *     </tr>
+ *     <tr>
+ *         <td>
+ *             WeatherAddon.EventWeatherForecast
+ *         </td>
+ *         <td>
+ *             The available Forecasts (including todays if it is before 15:00)
+ *         </td>
+ *     </tr>
+ *     <tr>
+ *         <td>
+ *             WeatherAddon.Event_Weather_Today
+ *         </td>
+ *         <td>
+ *             The current weather and forecasts if it is before 15:00.
+ *         </td>
+ *     </tr>
+ * </table>
+ * </p>
  */
+@SuppressWarnings("ALL")
 public class WeatherTTSOutputExtension extends TTSOutputExtension{
-    public static String ID = WeatherTTSOutputExtension.class.getCanonicalName();
+    public static final String ID = WeatherTTSOutputExtension.class.getCanonicalName();
     private static final String TTS_CURRENT_WEATHER = "currentWeather-";
     private static final String TTS_OVERVIEW_Rating = "overviewRating-";
     private static final String TTS_OVERVIEW_CODE = "overviewCode-";
@@ -57,8 +88,8 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         Resource<WeatherChannel> resource = resources.get(0);
         StringBuilder words = new StringBuilder();
         constructMessage(words, resource.getResource(), event);
-        TTSData ttsData =  TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
-        return ttsData;
+        System.out.println(words.toString());
+        return TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
     }
 
     /**
@@ -79,22 +110,35 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
                         || (event.getID().equals(Event.RESPONSE)
                                                     && event.containsDescriptor(Event.FULL_WELCOME_EVENT))) {
             createCurrentWeather(words, weatherChannel);
-            createWeatherIntroductionForToday(words, weatherChannel);
+            if(!LocalTime.now().isAfter(LocalTime.of(15,0)))
+                createWeatherIntroductionForToday(words, weatherChannel);
         } else {
             createCurrentWeather(words, weatherChannel);
-            createWeatherIntroductionForToday(words, weatherChannel);
+            if(!LocalTime.now().isAfter(LocalTime.of(15,0)))
+                createWeatherIntroductionForToday(words, weatherChannel);
         }
     }
 
+    /**
+     * appends the current Weather to the stringbuilder
+     * @param words a StringBuilder instance
+     * @param weatherChannel containing the weather-informations
+     */
     public void createCurrentWeather(StringBuilder words, WeatherChannel weatherChannel) {
         Condition condition = weatherChannel.getChannel().getItem().getCondition();
         String unit = weatherChannel.getChannel().getUnits().getTemperature().name();
         HashMap<String, String> data = new HashMap<>();
         data.put("Temp", String.valueOf(condition.getTemp()));
-        data.put("Unit", unit);
+        data.put("Unit", getWords(unit, null));
         words.append(getWords(TTS_CURRENT_WEATHER + condition.getCode(), data));
+        words.append(" ");
     }
 
+    /**
+     * appends the forecast for today to the Stringbuilder
+     * @param words a Stringbuilder instance
+     * @param weatherChannel containing the weather-informations
+     */
     public void createWeatherIntroductionForToday(StringBuilder words, WeatherChannel weatherChannel) {
         String today = getWords(TTS_TODAY, null);
         HashMap<String, String> dataToday = new HashMap<>();
@@ -102,13 +146,18 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         createWeatherForecast(words, weatherChannel, weatherChannel.getForecastForToday(), dataToday);
     }
 
+    /**
+     * appends all the weather-forecasts (except todays if its after 15:00) tothe Stringbuilder
+     * @param words a Stringbuilder-instance
+     * @param weatherChannel containing all the weather-Information
+     */
     public void createWeatherForecasts(StringBuilder words, WeatherChannel weatherChannel) {
         List<com.github.fedy2.weather.data.Forecast> forecasts = weatherChannel.getChannel().getItem().getForecasts();
         LocalDate todayDate = LocalDate.now();
 
         for (com.github.fedy2.weather.data.Forecast forecast : forecasts) {
             LocalDate forecastDate = forecast.getDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-            if(todayDate.isEqual(forecastDate)) {
+            if(todayDate.isEqual(forecastDate) && !LocalTime.now().isAfter(LocalTime.of(15,0))) {
                 String today = getWords(TTS_TODAY, null);
                 HashMap<String, String> data = new HashMap<>();
                 data.put("Day", today);
@@ -121,12 +170,19 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
             } else {
                 String day = forecastDate.getDayOfWeek().toString().toLowerCase();
                 HashMap<String, String> data = new HashMap<>();
-                data.put("Day", day);
+                data.put("Day", getWords(day, null));
                 createWeatherForecast(words, weatherChannel, new Forecast(forecast), data);
             }
         }
     }
 
+    /**
+     * appends a Weather-Forecast to the Stringbuilder
+     * @param words the Stringbuilder
+     * @param channel containing all the weather-informations
+     * @param forecast the forecast to append
+     * @param data an Hashmap (must contain an entry with key: Day and value the Day)
+     */
     public void createWeatherForecast(StringBuilder words, WeatherChannel channel,
                                       Forecast forecast, HashMap<String, String> data) {
         String high = String.valueOf(forecast.getForecast().getHigh());
@@ -146,9 +202,14 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
             words.append(" ");
             words.append(getWords(TTS_TEMPERATURE_PART, data));
         } else {
-            words.append(getWords(TTS_OVERVIEW_CODE + forecast.getCode(), data));
-            words.append(" ");
+            String description = getWords(TTS_OVERVIEW_CODE + forecast.getCode(), data);
+            if (!description.isEmpty() && (description.lastIndexOf(".") == (description.length() - 1))) {
+                description = description.substring(0, description.length() -1);
+            }
+            words.append(description);
+            words.append(", ");
             words.append(getWords(TTS_TEMPERATURE, data));
+            words.append(" ");
         }
     }
 

@@ -8,6 +8,7 @@ import java.util.LinkedList;
 /**
  * Use this class to debug
  */
+@SuppressWarnings("ALL")
 public class Debug {
     public static void main(String[] args) {
         LinkedList<AddOn> addOns = new LinkedList<>();

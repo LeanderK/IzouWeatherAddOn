@@ -21,14 +21,15 @@ import java.util.Optional;
  * Generates the Weather-Information.
  * It uses Yahoo-Weather internally.
  */
+@SuppressWarnings("ALL")
 public class WeatherContentGenerator extends ContentGenerator{
     public static final String ID = WeatherContentGenerator.class.getCanonicalName();
     public static final String RESOURCE_ID = WeatherContentGenerator.class.getCanonicalName() + ".WeatherInfo";
 
-    YahooWeatherService service = null;
-    private IdentificationManager identificationManager = IdentificationManager.getInstance();
-    private Context context;
-    private WOEIDFinder woeidFinder;
+    private YahooWeatherService service = null;
+    private final IdentificationManager identificationManager = IdentificationManager.getInstance();
+    private final Context context;
+    private final WOEIDFinder woeidFinder;
     private String woeid = null;
 
     public WeatherContentGenerator(Context context) {
@@ -63,7 +64,7 @@ public class WeatherContentGenerator extends ContentGenerator{
         if(woeid == null) woeid = woeidFinder.getWOEIDLocation();
         //maybe unable to obtain needed information's
         if(woeid == null || service == null) return null;
-        Channel channel = null;
+        Channel channel;
         try {
             channel = service.getForecast(woeid, DegreeUnit.CELSIUS);
         } catch (JAXBException | IOException e) {

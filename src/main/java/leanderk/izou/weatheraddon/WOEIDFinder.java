@@ -19,12 +19,13 @@ import java.util.Optional;
 /**
  * Finds the woeid for a specific location.
  */
+@SuppressWarnings("ALL")
 public class WOEIDFinder {
     private static final String PERSONAL_INFORMATION_ID = "leanderk.izou.personalinformation.InformationCG";
     private static final String PERSONAL_INFORMATION_Resource_ID =
             "leanderk.izou.personalinformation.InformationAddOn.ResourceInfo";
-    private IdentificationManager identificationManager = IdentificationManager.getInstance();
-    private Context context;
+    private final IdentificationManager identificationManager = IdentificationManager.getInstance();
+    private final Context context;
 
     public WOEIDFinder(Context context) {
         this.context = context;
@@ -56,14 +57,14 @@ public class WOEIDFinder {
     }
 
     public String getWOEIDforLocation(HashMap<String, String> location) {
-        URL url = null;
+        URL url;
         try {
             url = getYahooURL(location);
         } catch (MalformedURLException | URISyntaxException e) {
             context.logger.getLogger().error("Unable to create WOEID-Query URL", e);
             return null;
         }
-        URLConnection connection = null;
+        URLConnection connection;
         try {
             connection = url.openConnection();
         } catch (IOException e) {

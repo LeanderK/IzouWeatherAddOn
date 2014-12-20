@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class WeatherChannel{
 
-    private com.github.fedy2.weather.data.Channel channel;
+    private final com.github.fedy2.weather.data.Channel channel;
 
     public WeatherChannel(Channel channel) {
         this.channel = channel;

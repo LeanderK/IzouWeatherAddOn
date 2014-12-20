@@ -8,8 +8,10 @@ import intellimate.izou.output.OutputExtension;
 import intellimate.izou.output.OutputPlugin;
 
 /**
- * Created by LeanderK on 05/12/14.
+ * This AddOn fetches Weather-Data.
+ * It will use the location specified with the leanderk.izou.personalinformation
  */
+@SuppressWarnings("ALL")
 public class WeatherAddon extends AddOn{
     public static final String ID = WeatherAddon.class.getCanonicalName();
     public static final String EVENT_WEATHER_FULL = WeatherAddon.class.getCanonicalName() + ".FullWeather";

@@ -5,7 +5,7 @@ package leanderk.izou.weatheraddon.weather;
  */
 public class Forecast{
 
-    private com.github.fedy2.weather.data.Forecast forecast;
+    private final com.github.fedy2.weather.data.Forecast forecast;
 
     public Forecast(com.github.fedy2.weather.data.Forecast forecast) {
         this.forecast = forecast;
