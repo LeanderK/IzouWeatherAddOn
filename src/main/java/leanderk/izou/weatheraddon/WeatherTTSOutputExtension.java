@@ -89,7 +89,9 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         StringBuilder words = new StringBuilder();
         constructMessage(words, resource.getResource(), event);
         System.out.println(words.toString());
-        return TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
+        TTSData ttsData = TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
+        ttsData.setPriority(10);
+        return ttsData;
     }
 
     /**
