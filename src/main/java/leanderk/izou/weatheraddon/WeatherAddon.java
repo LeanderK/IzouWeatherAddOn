@@ -6,12 +6,14 @@ import intellimate.izou.contentgenerator.ContentGenerator;
 import intellimate.izou.events.EventsController;
 import intellimate.izou.output.OutputExtension;
 import intellimate.izou.output.OutputPlugin;
+import ro.fortsoft.pf4j.Extension;
 
 /**
  * This AddOn fetches Weather-Data.
  * It will use the location specified with the leanderk.izou.personalinformation
  */
 @SuppressWarnings("ALL")
+@Extension
 public class WeatherAddon extends AddOn{
     public static final String ID = WeatherAddon.class.getCanonicalName();
     public static final String EVENT_WEATHER_FULL = WeatherAddon.class.getCanonicalName() + ".FullWeather";

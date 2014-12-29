@@ -23,7 +23,7 @@ import java.util.Optional;
 public class WOEIDFinder {
     private static final String PERSONAL_INFORMATION_ID = "leanderk.izou.personalinformation.InformationCG";
     private static final String PERSONAL_INFORMATION_Resource_ID =
-            "leanderk.izou.personalinformation.InformationAddOn.ResourceInfo";
+            "leanderk.izou.personalinformation.InformationCG.ResourceInfo";
     private final IdentificationManager identificationManager = IdentificationManager.getInstance();
     private final Context context;
 

@@ -88,7 +88,6 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         Resource<WeatherChannel> resource = resources.get(0);
         StringBuilder words = new StringBuilder();
         constructMessage(words, resource.getResource(), event);
-        System.out.println(words.toString());
         TTSData ttsData = TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
         ttsData.setPriority(10);
         return ttsData;
