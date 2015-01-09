@@ -22,10 +22,10 @@ import java.util.Locale;
  * It will speak the weather.
  * <p>
  * This class produce different results for different scenarios:
- * <table>
+ * <table summary="">
  *     <tr>
  *         <td>
- *             Event.FullWelcomeEvent & Response
+ *             Event.FullWelcomeEvent and Response
  *         </td>
  *         <td>
  *             The current weather (and if before 15:00 the forecast for today).
@@ -48,7 +48,6 @@ import java.util.Locale;
  *         </td>
  *     </tr>
  * </table>
- * </p>
  */
 @SuppressWarnings("ALL")
 public class WeatherTTSOutputExtension extends TTSOutputExtension{

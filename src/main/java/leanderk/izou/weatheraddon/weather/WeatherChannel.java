@@ -18,7 +18,7 @@ public class WeatherChannel{
     }
 
     /**
-     * returns the forecast for today
+     * returns the forecast for today.
      * @return an instance of forecast describing the remaining day
      */
     public Forecast getForecastForToday() {
@@ -26,7 +26,7 @@ public class WeatherChannel{
     }
 
     /**
-     * returns all the forecasts for today & following days
+     * returns all the forecasts for today and following days.
      * @return a list of forecasts
      */
     public List<Forecast> getForecasts() {

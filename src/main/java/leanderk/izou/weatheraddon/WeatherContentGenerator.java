@@ -7,7 +7,6 @@ import intellimate.izou.contentgenerator.ContentGenerator;
 import intellimate.izou.events.Event;
 import intellimate.izou.resource.Resource;
 import intellimate.izou.system.Context;
-import intellimate.izou.system.Identification;
 import intellimate.izou.system.IdentificationManager;
 import leanderk.izou.weatheraddon.weather.WeatherChannel;
 
@@ -21,7 +20,6 @@ import java.util.Optional;
  * Generates the Weather-Information.
  * It uses Yahoo-Weather internally.
  */
-@SuppressWarnings("ALL")
 public class WeatherContentGenerator extends ContentGenerator{
     public static final String ID = WeatherContentGenerator.class.getCanonicalName();
     public static final String RESOURCE_ID = WeatherContentGenerator.class.getCanonicalName() + ".WeatherInfo";
@@ -45,10 +43,10 @@ public class WeatherContentGenerator extends ContentGenerator{
 
     @Override
     public List<Resource> announceResources() {
-        Optional<Identification> identification = identificationManager.getIdentification(this);
-        Resource<WeatherChannel> resource = new Resource<>(RESOURCE_ID);
-        identification.ifPresent(resource::setProvider);
-        return Arrays.asList(resource);
+        return identificationManager.getIdentification(this)
+                .map(id -> new Resource<>(RESOURCE_ID, id))
+                .orElse(new Resource<>(RESOURCE_ID))
+                .map(Arrays::asList);
     }
 
     @Override
@@ -71,11 +69,12 @@ public class WeatherContentGenerator extends ContentGenerator{
             context.logger.getLogger().error("Error while trying to create YahooWeatherService", e);
             return null;
         }
-        Resource<WeatherChannel> resource = new Resource<>(RESOURCE_ID);
-        Optional<Identification> identification = identificationManager.getIdentification(this);
-        identification.ifPresent(resource::setProvider);
-        resource.setResource(new WeatherChannel(channel));
-        return Arrays.asList(resource);
+
+        return identificationManager.getIdentification(this)
+                .map(id -> new Resource<WeatherChannel>(RESOURCE_ID, id))
+                .orElseThrow(() -> new RuntimeException("unable to create resource"))
+                .setResource(new WeatherChannel(channel))
+                .map(Arrays::asList);
     }
 
 
