@@ -77,4 +77,6 @@ public class WeatherContentGenerator extends ContentGenerator{
         resource.setResource(new WeatherChannel(channel));
         return Arrays.asList(resource);
     }
+
+
 }
