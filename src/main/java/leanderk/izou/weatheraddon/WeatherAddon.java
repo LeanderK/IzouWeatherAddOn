@@ -26,7 +26,6 @@ public class WeatherAddon extends AddOn{
 
     @Override
     public void prepare() {
-
     }
 
     @Override
@@ -54,7 +53,7 @@ public class WeatherAddon extends AddOn{
     @Override
     public OutputExtension[] registerOutputExtension() {
         OutputExtension[] outputExtensions = new OutputExtension[1];
-        outputExtensions[0] = new WeatherTTSOutputExtension(getPropertiesContainer(), getContext());
+        outputExtensions[0] = new WeatherTTSOutputExtension(getContext());
         return outputExtensions;
     }
 

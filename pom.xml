@@ -7,13 +7,13 @@
     <groupId>leanderk.izou.weatheraddon</groupId>
     <artifactId>weatheraddon</artifactId>
     <packaging>jar</packaging>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.9-SNAPSHOT</version>
     <name>Leander Kurscheidt</name>
 
     <properties>
         <plugin.id>leanderk.izou.weatheraddon</plugin.id>
         <plugin.class>leanderk.izou.weatheraddon.ZipFileManager</plugin.class>
-        <plugin.version>0.5</plugin.version>
+        <plugin.version>0.9</plugin.version>
         <plugin.provider>Leander Kurscheidt</plugin.provider>
         <plugin.dependencies>leanderk.izou.tts</plugin.dependencies>
         <repo.name>IzouWeatherAddOn</repo.name>
@@ -26,12 +26,12 @@
         <dependency>
             <groupId>intellimate.izou</groupId>
             <artifactId>Izou</artifactId>
-            <version>0.9.9.9-SNAPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>leanderk.izou.tts</groupId>
             <artifactId>tts</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.github.fedy2</groupId>

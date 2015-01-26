@@ -1,15 +1,13 @@
 package leanderk.izou.weatheraddon;
 
 import com.github.fedy2.weather.data.Condition;
-import intellimate.izou.addon.PropertiesContainer;
 import intellimate.izou.events.Event;
 import intellimate.izou.resource.Resource;
 import intellimate.izou.system.Context;
 import leanderk.izou.tts.outputextension.TTSData;
 import leanderk.izou.tts.outputextension.TTSOutputExtension;
 import leanderk.izou.tts.outputplugin.TTSOutputPlugin;
-import leanderk.izou.weatheraddon.weather.Forecast;
-import leanderk.izou.weatheraddon.weather.WeatherChannel;
+import leanderk.izou.weatheraddon.weather.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -63,11 +61,10 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
     /**
      * creates a new outputExtension with a new id
      *
-     * @param propertiesContainer the PropertiesContainer used for generating Sentences
      * @param context the context used
      */
-    public WeatherTTSOutputExtension(PropertiesContainer propertiesContainer, Context context) {
-        super(ID, propertiesContainer, context);
+    public WeatherTTSOutputExtension(Context context) {
+        super(ID, context);
         setPluginId(TTSOutputPlugin.ID);
         addResourceIdToWishList(WeatherContentGenerator.RESOURCE_ID);
     }
@@ -107,10 +104,9 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         } else if (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_FORECAST)) {
             createWeatherForecasts(words, weatherChannel);
         } else if (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_TODAY)
-                        || (event.getID().equals(Event.RESPONSE)
-                                                    && event.containsDescriptor(Event.FULL_WELCOME_EVENT))) {
+                        || event.containsDescriptor(Event.FULL_WELCOME_EVENT)) {
             createCurrentWeather(words, weatherChannel);
-            if(!LocalTime.now().isAfter(LocalTime.of(15,0)))
+            if (!LocalTime.now().isAfter(LocalTime.of(15,0)))
                 createWeatherIntroductionForToday(words, weatherChannel);
         } else {
             createCurrentWeather(words, weatherChannel);

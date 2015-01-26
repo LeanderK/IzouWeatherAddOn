@@ -125,7 +125,7 @@ en_p_weather-codes-9=drizzle
 de_p_weather-codes-9=Nieselregen
 de_p_withoutDateDescription-9 = §withoutDateDescriptionWird nieseln.
 de_p_overviewCode-9 = §overviewEs §weather-codes-9 geben.
-de_p_currentWeather5= §currentWeatherUnd es nieselt zurzeit.
+de_p_currentWeather-9= §currentWeatherUnd es nieselt zurzeit.
 
 en_p_weather-codes-10=freezing rain
 de_p_weather-codes-10=§weather-codes-7
