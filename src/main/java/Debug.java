@@ -1,7 +1,7 @@
-import intellimate.izou.addon.AddOn;
-import intellimate.izou.main.Main;
 import leanderk.izou.tts.TTS;
 import leanderk.izou.weatheraddon.WeatherAddon;
+import org.intellimate.izou.addon.AddOnModel;
+import org.intellimate.izou.main.Main;
 
 import java.util.LinkedList;
 
@@ -11,7 +11,7 @@ import java.util.LinkedList;
 @SuppressWarnings("ALL")
 public class Debug {
     public static void main(String[] args) {
-        LinkedList<AddOn> addOns = new LinkedList<>();
+        LinkedList<AddOnModel> addOns = new LinkedList<>();
         addOns.add(new WeatherAddon());
         addOns.add(new TTS());
         /*

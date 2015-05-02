@@ -7,7 +7,7 @@ import ro.fortsoft.pf4j.PluginWrapper;
  * It shouldn't contain logic, the logic belongs in the AddOn classes
  */
 @SuppressWarnings("ALL")
-public class ZipFileManager extends intellimate.izou.addon.ZipFileManager{
+public class ZipFileManager extends org.intellimate.izou.sdk.addon.ZipFileManager{
     public ZipFileManager(PluginWrapper wrapper) {
         super(wrapper);
     }

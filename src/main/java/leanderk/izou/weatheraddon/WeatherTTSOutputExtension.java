@@ -1,13 +1,14 @@
 package leanderk.izou.weatheraddon;
 
 import com.github.fedy2.weather.data.Condition;
-import intellimate.izou.events.Event;
-import intellimate.izou.resource.Resource;
-import intellimate.izou.system.Context;
 import leanderk.izou.tts.outputextension.TTSData;
 import leanderk.izou.tts.outputextension.TTSOutputExtension;
 import leanderk.izou.tts.outputplugin.TTSOutputPlugin;
 import leanderk.izou.weatheraddon.weather.*;
+import org.intellimate.izou.events.EventModel;
+import org.intellimate.izou.resource.ResourceModel;
+import org.intellimate.izou.sdk.Context;
+import org.intellimate.izou.sdk.events.CommonEvents;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -48,7 +49,7 @@ import java.util.Locale;
  * </table>
  */
 @SuppressWarnings("ALL")
-public class WeatherTTSOutputExtension extends TTSOutputExtension{
+public class WeatherTTSOutputExtension extends TTSOutputExtension {
     public static final String ID = WeatherTTSOutputExtension.class.getCanonicalName();
     private static final String TTS_CURRENT_WEATHER = "currentWeather-";
     private static final String TTS_OVERVIEW_Rating = "overviewRating-";
@@ -69,6 +70,8 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         addResourceIdToWishList(WeatherContentGenerator.RESOURCE_ID);
     }
 
+
+
     /**
      * override this class to generate the TTSData.
      * it will be called, when canGenerate returns true for the locale
@@ -77,11 +80,11 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
      * @return an instance of TTSData, which will then be consumed by the TTSOutputPlugin
      */
     @Override
-    public TTSData generateSentence(Event event) {
-        List<Resource> resources = event.getListResourceContainer()
+    public TTSData generateSentence(EventModel event) {
+        List<ResourceModel> resources = event.getListResourceContainer()
                 .provideResource(WeatherContentGenerator.RESOURCE_ID);
         if(resources.isEmpty()) return null;
-        Resource<WeatherChannel> resource = resources.get(0);
+        ResourceModel<WeatherChannel> resource = resources.get(0);
         StringBuilder words = new StringBuilder();
         constructMessage(words, resource.getResource(), event);
         TTSData ttsData = TTSData.createTTSData(words.toString(), getLocale(), 0, ID);
@@ -95,7 +98,7 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
      * @param words a StringBuilder instance
      * @param event the event
      */
-    private void constructMessage(StringBuilder words, WeatherChannel weatherChannel, Event event) {
+    private void constructMessage(StringBuilder words, WeatherChannel weatherChannel, EventModel event) {
         if (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_FULL)
                         || (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_FORECAST)
                                                 && event.containsDescriptor(WeatherAddon.EVENT_WEATHER_TODAY))) {
@@ -104,7 +107,7 @@ public class WeatherTTSOutputExtension extends TTSOutputExtension{
         } else if (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_FORECAST)) {
             createWeatherForecasts(words, weatherChannel);
         } else if (event.containsDescriptor(WeatherAddon.EVENT_WEATHER_TODAY)
-                        || event.containsDescriptor(Event.FULL_WELCOME_EVENT)) {
+                        || event.containsDescriptor(CommonEvents.Response.FULL_RESPONSE_DESCRIPTOR)) {
             createCurrentWeather(words, weatherChannel);
             if (!LocalTime.now().isAfter(LocalTime.of(15,0)))
                 createWeatherIntroductionForToday(words, weatherChannel);

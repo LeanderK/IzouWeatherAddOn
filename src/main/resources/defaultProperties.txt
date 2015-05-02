@@ -5,7 +5,7 @@
 #days
 de_p_today = heute
 de_p_tomorrow = morgen
-de_p_dayAfterTomorrow = übermorgen
+de_p_dayAfterTomorrow = Ã¼bermorgen
 de_p_monday = Montag
 de_p_tuesday = Dienstag
 de_p_wednesday = Mittwoch
@@ -18,15 +18,15 @@ de_p_CELSIUS = Grad
 de_p_FAHRENHEIT = Grad Fahrenheit
 
 de_p_overviewEin = $Day wird ein
-de_p_overviewEin_1 = Nach Vorhersage für $Day wird ein
+de_p_overviewEin_1 = Nach Vorhersage fÃ¼r $Day wird ein
 de_p_overviewEin_2 = $Day wird ein
 de_p_overviewEin_3 = $Day wird ein
 de_p_overviewDasWetter = $Day wird das Wetter
-de_p_overviewDasWetter_1 = Nach Vorhersage für $Day wird das Wetter
+de_p_overviewDasWetter_1 = Nach Vorhersage fÃ¼r $Day wird das Wetter
 de_p_overviewDasWetter_2 = $Day wird das Wetter
 de_p_overviewDasWetter_3 = $Day wird das Wetter
 de_p_overviewEs = $Day wird es
-de_p_overviewEs_1 = Nach Vorhersage für $Day wird es
+de_p_overviewEs_1 = Nach Vorhersage fÃ¼r $Day wird es
 de_p_overviewEs_2 = $Day wird es
 de_p_overviewEs_3 = $Day wird es
 
@@ -46,23 +46,23 @@ de_p_currentWeatherEin_1 = Zurzeit hat es $Temp $Unit und es gibt ein
 de_p_currentWeatherEin_2 = Gerade hat es $Temp $Unit und es gibt ein
 
 #overview with rating
-de_p_overviewRating--3 = §overviewEin richtiger scheiß Tag.
-de_p_overviewRating--3_1 = §overviewDasWetter garnicht gut.
-de_p_overviewRating--3_2 = §overviewDasWetter sehr schlecht.
-de_p_overviewRating--2 = §overviewDasWetter leider garnicht gut.
-de_p_overviewRating--1 = §overviewDasWetter nicht so toll.
-de_p_overviewRating-0 = §overviewDasWetter ganz ok.
-de_p_overviewRating-1 = §overviewDasWetter gut.
-de_p_overviewRating-2 = §overviewDasWetter schön.
-de_p_overviewRating-3 = §overviewDasWetter sehr schön.
-de_p_overviewRating-3_1 = §overviewEin sehr schöner Tag.
+de_p_overviewRating--3 = Â§overviewEin richtiger scheiÃŸ Tag.
+de_p_overviewRating--3_1 = Â§overviewDasWetter garnicht gut.
+de_p_overviewRating--3_2 = Â§overviewDasWetter sehr schlecht.
+de_p_overviewRating--2 = Â§overviewDasWetter leider garnicht gut.
+de_p_overviewRating--1 = Â§overviewDasWetter nicht so toll.
+de_p_overviewRating-0 = Â§overviewDasWetter ganz ok.
+de_p_overviewRating-1 = Â§overviewDasWetter gut.
+de_p_overviewRating-2 = Â§overviewDasWetter schÃ¶n.
+de_p_overviewRating-3 = Â§overviewDasWetter sehr schÃ¶n.
+de_p_overviewRating-3_1 = Â§overviewEin sehr schÃ¶ner Tag.
 
-de_p_temperature = Dabei ist $High $Unit die Höchsttemperatur.
+de_p_temperature = Dabei ist $High $Unit die HÃ¶chsttemperatur.
 de_p_temperature_1 = Man kann $Low bis $High $Unit erwarten.
 de_p_temperature_2 = $Low bis $High $Unit sind zu erwarten.
 de_p_temperature_3 = Mit Temperaturen von $Low bis $High $Unit.
 de_p_temperaturePart_2 = Mit $Low bis $High $Unit.
-de_p_temperaturePart_3 = Mit ungefähr $Low bis $High $Unit.
+de_p_temperaturePart_3 = Mit ungefÃ¤hr $Low bis $High $Unit.
 de_p_temperaturePart_4 = Mit Temperaturen von $Low bis $High $Unit.
 
 #
@@ -70,294 +70,294 @@ de_p_temperaturePart_4 = Mit Temperaturen von $Low bis $High $Unit.
 #
 en_p_weather-codes-0=tornado
 de_p_weather-codes-0=Tornado
-de_p_withoutDateDescription-0 = §withoutDateDescriptionEinen §weather-codes-0 geben.
-de_p_overviewCode-0 = §overviewCodeEinen §weather-codes-0 geben.
-de_p_currentWeather-0= §currentWeatherGibt §weather-codes-0 .
+de_p_withoutDateDescription-0 = Â§withoutDateDescriptionEinen Â§weather-codes-0 geben.
+de_p_overviewCode-0 = Â§overviewCodeEinen Â§weather-codes-0 geben.
+de_p_currentWeather-0= Â§currentWeatherGibt Â§weather-codes-0 .
 
 en_p_weather-codes-1=tropical storm
 de_p_weather-codes-1=tropischen sturm
-de_p_withoutDateDescription-1 = §withoutDateDescriptionEin §weather-codes-1 geben.
-de_p_overviewCode-1 = §overviewCodeEinen §weather-codes-1 geben.
-de_p_currentWeather-1= §currentWeatherGibt einen §weather-codes-1 .
+de_p_withoutDateDescription-1 = Â§withoutDateDescriptionEin Â§weather-codes-1 geben.
+de_p_overviewCode-1 = Â§overviewCodeEinen Â§weather-codes-1 geben.
+de_p_currentWeather-1= Â§currentWeatherGibt einen Â§weather-codes-1 .
 
 en_p_weather-codes-2=hurricane
 de_p_weather-codes-2=Wirbelsturm
-de_p_withoutDateDescription-2 = §withoutDateDescriptionEin §weather-codes-2 geben.
-de_p_overviewCode-2 = §overviewCodeEinen §weather-codes-2 geben.
-de_p_currentWeather-2= §currentWeatherGibt einen §weather-codes-1 .
+de_p_withoutDateDescription-2 = Â§withoutDateDescriptionEin Â§weather-codes-2 geben.
+de_p_overviewCode-2 = Â§overviewCodeEinen Â§weather-codes-2 geben.
+de_p_currentWeather-2= Â§currentWeatherGibt einen Â§weather-codes-1 .
 
 en_p_weather-codes-3=severe thunderstorms
 de_p_weather-codes-3=schwere Gewitter
-de_p_withoutDateDescription-3 = §withoutDateDescriptionWird §weather-codes-3 geben.
-de_p_overviewCode-3 = §overviewCodeEs §weather-codes-3 geben.
+de_p_withoutDateDescription-3 = Â§withoutDateDescriptionWird Â§weather-codes-3 geben.
+de_p_overviewCode-3 = Â§overviewCodeEs Â§weather-codes-3 geben.
 
 en_p_weather-codes-4=thunderstorms
 de_p_weather-codes-4=Gewitter
-de_p_withoutDateDescription-4 = §withoutDateDescriptionWird §weather-codes-4 geben.
-de_p_overviewCode-4 = §overviewEs §weather-codes-4 geben.
-de_p_currentWeather-4= §currentWeatherGibt gewittert .
+de_p_withoutDateDescription-4 = Â§withoutDateDescriptionWird Â§weather-codes-4 geben.
+de_p_overviewCode-4 = Â§overviewEs Â§weather-codes-4 geben.
+de_p_currentWeather-4= Â§currentWeatherGibt gewittert .
 
 en_p_weather-codes-5=mixed rain and snow
 de_p_weather-codes-5=Schneeregen
-de_p_withoutDateDescription-5 = §withoutDateDescriptionWird §weather-codes-5 geben.
-de_p_overviewCode-5 = §overviewEs §weather-codes-6 geben.
-de_p_currentWeather-5= §currentWeatherGibt zurzeit §weather-codes-5 .
+de_p_withoutDateDescription-5 = Â§withoutDateDescriptionWird Â§weather-codes-5 geben.
+de_p_overviewCode-5 = Â§overviewEs Â§weather-codes-6 geben.
+de_p_currentWeather-5= Â§currentWeatherGibt zurzeit Â§weather-codes-5 .
 
 en_p_weather-codes-6=mixed rain and sleet
-de_p_weather-codes-6=§weather-codes-5
-de_p_withoutDateDescription-6 = §withoutDateDescription-5
-de_p_overviewCode-6 = §overviewCode-5
-de_p_currentWeather-6= §currentWeather5
+de_p_weather-codes-6=Â§weather-codes-5
+de_p_withoutDateDescription-6 = Â§withoutDateDescription-5
+de_p_overviewCode-6 = Â§overviewCode-5
+de_p_currentWeather-6= Â§currentWeather5
 
 en_p_weather-codes-7=mixed snow and sleet
 de_p_weather-codes-7=Eisregen
-de_p_withoutDateDescription-7 = §withoutDateDescriptionMit gefrierenden Regen zu rechen.
-de_p_overviewCode-7 = §overviewEs §weather-codes-7 geben.
-de_p_currentWeather-7= §currentWeatherGibt zurzeit §weather-codes-7 .
+de_p_withoutDateDescription-7 = Â§withoutDateDescriptionMit gefrierenden Regen zu rechen.
+de_p_overviewCode-7 = Â§overviewEs Â§weather-codes-7 geben.
+de_p_currentWeather-7= Â§currentWeatherGibt zurzeit Â§weather-codes-7 .
 
 en_p_weather-codes-8=freezing drizzle
-de_p_weather-codes-8=§weather-codes-7
-de_p_withoutDateDescription-8 = §withoutDateDescription-7
-de_p_overviewCode-8 = §overviewCode-7
-de_p_currentWeather-8= §currentWeather-7
+de_p_weather-codes-8=Â§weather-codes-7
+de_p_withoutDateDescription-8 = Â§withoutDateDescription-7
+de_p_overviewCode-8 = Â§overviewCode-7
+de_p_currentWeather-8= Â§currentWeather-7
 
 en_p_weather-codes-9=drizzle
 de_p_weather-codes-9=Nieselregen
-de_p_withoutDateDescription-9 = §withoutDateDescriptionWird nieseln.
-de_p_overviewCode-9 = §overviewEs §weather-codes-9 geben.
-de_p_currentWeather-9= §currentWeatherUnd es nieselt zurzeit.
+de_p_withoutDateDescription-9 = Â§withoutDateDescriptionWird nieseln.
+de_p_overviewCode-9 = Â§overviewEs Â§weather-codes-9 geben.
+de_p_currentWeather-9= Â§currentWeatherUnd es nieselt zurzeit.
 
 en_p_weather-codes-10=freezing rain
-de_p_weather-codes-10=§weather-codes-7
-de_p_withoutDateDescription-10 = §withoutDateDescription-7
-de_p_overviewCode-10 = §overviewCode-7
-de_p_currentWeather-10= §currentWeather-7
+de_p_weather-codes-10=Â§weather-codes-7
+de_p_withoutDateDescription-10 = Â§withoutDateDescription-7
+de_p_overviewCode-10 = Â§overviewCode-7
+de_p_currentWeather-10= Â§currentWeather-7
 
 en_p_weather-codes-11=showers
-de_p_weather-codes-11=Regenfälle
-de_p_withoutDateDescription-11 = §withoutDateDescriptionWird regnen.
-de_p_overviewCode-11 = §overviewCodeWird regnen.
-de_p_currentWeather-11= §currentWeatherUnd regnet.
+de_p_weather-codes-11=RegenfÃ¤lle
+de_p_withoutDateDescription-11 = Â§withoutDateDescriptionWird regnen.
+de_p_overviewCode-11 = Â§overviewCodeWird regnen.
+de_p_currentWeather-11= Â§currentWeatherUnd regnet.
 
 en_p_weather-codes-12=showers
-de_p_weather-codes-12=§weather-codes-11
-de_p_withoutDateDescription-12 = §withoutDateDescription-11
-de_p_overviewCode-12 = §overviewCode-11
-de_p_currentWeather-12= §currentWeather-11 .
+de_p_weather-codes-12=Â§weather-codes-11
+de_p_withoutDateDescription-12 = Â§withoutDateDescription-11
+de_p_overviewCode-12 = Â§overviewCode-11
+de_p_currentWeather-12= Â§currentWeather-11 .
 
 en_p_weather-codes-13=snow flurries
-de_p_weather-codes-13=Schneegestöber
-de_p_withoutDateDescription-13 = §withoutDateDescriptionWird schneien.
-de_p_overviewCode-13 = §overviewEs scheinen.
-de_p_currentWeather-13= §currentWeatherUnd es schneit gerade .
+de_p_weather-codes-13=SchneegestÃ¶ber
+de_p_withoutDateDescription-13 = Â§withoutDateDescriptionWird schneien.
+de_p_overviewCode-13 = Â§overviewEs scheinen.
+de_p_currentWeather-13= Â§currentWeatherUnd es schneit gerade .
 
 en_p_weather-codes-14=light snow showers
 de_p_weather-codes-14=leichte Schneeschauer
-de_p_withoutDateDescription-14 = §withoutDateDescriptionWird etwas schauerartig schneien.
-de_p_overviewCode-14 = §overviewEs etwas schauerartig schneien.
-de_p_currentWeather-14= §currentWeatherUnd es schneit zurzeit schauerartig.
+de_p_withoutDateDescription-14 = Â§withoutDateDescriptionWird etwas schauerartig schneien.
+de_p_overviewCode-14 = Â§overviewEs etwas schauerartig schneien.
+de_p_currentWeather-14= Â§currentWeatherUnd es schneit zurzeit schauerartig.
 
 en_p_weather-codes-15=blowing snow
-de_p_weather-codes-15=§weather-codes-13
-de_p_withoutDateDescription-15 = §withoutDateDescription-13
-de_p_overviewCode-15 = §overviewCode-13
-de_p_currentWeather-15= §currentWeather-13
+de_p_weather-codes-15=Â§weather-codes-13
+de_p_withoutDateDescription-15 = Â§withoutDateDescription-13
+de_p_overviewCode-15 = Â§overviewCode-13
+de_p_currentWeather-15= Â§currentWeather-13
 
 en_p_weather-codes-16=snow
 de_p_weather-codes-16=scheien
-de_p_withoutDateDescription-16 = §withoutDateDescriptionWird schneien.
-de_p_overviewCode-16 = §overviewEs scheinen.
-de_p_currentWeather-16= §currentWeatherUnd es schneit gerade .
+de_p_withoutDateDescription-16 = Â§withoutDateDescriptionWird schneien.
+de_p_overviewCode-16 = Â§overviewEs scheinen.
+de_p_currentWeather-16= Â§currentWeatherUnd es schneit gerade .
 
 en_p_weather-codes-17=hail
 de_p_weather-codes-17=hageln
-de_p_withoutDateDescription-17 = §withoutDateDescriptionWird §weather-codes-17.
-de_p_overviewCode-17 = §overviewEs §weather-codes-17 .
-de_p_currentWeather-17= §currentWeatherUnd es hagelt .
+de_p_withoutDateDescription-17 = Â§withoutDateDescriptionWird Â§weather-codes-17.
+de_p_overviewCode-17 = Â§overviewEs Â§weather-codes-17 .
+de_p_currentWeather-17= Â§currentWeatherUnd es hagelt .
 
 en_p_weather-codes-18=sleet
 de_p_weather-codes-18=Graupel
-de_p_withoutDateDescription-18 = §withoutDateDescriptionWird graupeln.
-de_p_overviewCode-18 = §overviewEs graupeln.
-de_p_currentWeather-18= §currentWeatherUnd es ist am graupeln.
+de_p_withoutDateDescription-18 = Â§withoutDateDescriptionWird graupeln.
+de_p_overviewCode-18 = Â§overviewEs graupeln.
+de_p_currentWeather-18= Â§currentWeatherUnd es ist am graupeln.
 
 en_p_weather-codes-19=dust
 de_p_weather-codes-19=Staub
-de_p_withoutDateDescription-19 = §withoutDateDescriptionWird staubig.
-de_p_overviewCode-19 = §overviewEs staubig.
-de_p_currentWeather-19= §currentWeatherUnd es ist grad sehr staubig.
+de_p_withoutDateDescription-19 = Â§withoutDateDescriptionWird staubig.
+de_p_overviewCode-19 = Â§overviewEs staubig.
+de_p_currentWeather-19= Â§currentWeatherUnd es ist grad sehr staubig.
 
 en_p_weather-codes-20=foggy
 de_p_weather-codes-20=neblig
-de_p_withoutDateDescription-20 = §withoutDateDescriptionWird neblig.
-de_p_overviewCode-20 = §overviewEs neblig.
-de_p_currentWeather-20= §currentWeatherUnd es ist grad sehr neblig.
+de_p_withoutDateDescription-20 = Â§withoutDateDescriptionWird neblig.
+de_p_overviewCode-20 = Â§overviewEs neblig.
+de_p_currentWeather-20= Â§currentWeatherUnd es ist grad sehr neblig.
 
 en_p_weather-codes-21=haze
 de_p_weather-codes-21=Dunst
-de_p_withoutDateDescription-21 = §withoutDateDescriptionWird dunstig.
-de_p_overviewCode-21 = §overviewEs dunstig.
-de_p_currentWeather-21= §currentWeatherUnd es ist grad sehr dunstig.
+de_p_withoutDateDescription-21 = Â§withoutDateDescriptionWird dunstig.
+de_p_overviewCode-21 = Â§overviewEs dunstig.
+de_p_currentWeather-21= Â§currentWeatherUnd es ist grad sehr dunstig.
 
 en_p_weather-codes-22=smoky
 de_p_weather-codes-22=Luftverschmutzung
-de_p_withoutDateDescription-22 = §withoutDateDescriptionWird eine hohe §weather-codes-22 geben.
-de_p_overviewCode-22 = §overviewEs eine hohe §weather-codes-22 geben.
-de_p_currentWeather-22= §currentWeatherGibt gerade eine hohe §weather-codes-22.
+de_p_withoutDateDescription-22 = Â§withoutDateDescriptionWird eine hohe Â§weather-codes-22 geben.
+de_p_overviewCode-22 = Â§overviewEs eine hohe Â§weather-codes-22 geben.
+de_p_currentWeather-22= Â§currentWeatherGibt gerade eine hohe Â§weather-codes-22.
 
 en_p_weather-codes-23=blustery
-de_p_weather-codes-23=stürmisch
-de_p_overviewCode-23 = §overviewEs §weather-codes-23 .
-de_p_withoutDateDescription-23 = §withoutDateDescriptionWird §weather-codes-23 .
-de_p_currentWeather-23= §currentWeatherUnd es ist zurzeit sehr stürmig.
+de_p_weather-codes-23=stÃ¼rmisch
+de_p_overviewCode-23 = Â§overviewEs Â§weather-codes-23 .
+de_p_withoutDateDescription-23 = Â§withoutDateDescriptionWird Â§weather-codes-23 .
+de_p_currentWeather-23= Â§currentWeatherUnd es ist zurzeit sehr stÃ¼rmig.
 
 en_p_weather-codes-24=windy
 de_p_weather-codes-24=windig
-de_p_overviewCode-24 = §overviewEs §weather-codes-24 .
-de_p_withoutDateDescription-24 = §withoutDateDescriptionWird §weather-codes-24 .
-de_p_currentWeather-24= §currentWeatherUnd es ist gerade sehr windig.
+de_p_overviewCode-24 = Â§overviewEs Â§weather-codes-24 .
+de_p_withoutDateDescription-24 = Â§withoutDateDescriptionWird Â§weather-codes-24 .
+de_p_currentWeather-24= Â§currentWeatherUnd es ist gerade sehr windig.
 
 en_p_weather-codes-25=cold
 de_p_weather-codes-25=kalt
-de_p_withoutDateDescription-25 = §withoutDateDescriptionWird §weather-codes-25 .
-de_p_overviewCode-25 = §overviewEs §weather-codes-25 .
-de_p_currentWeather-25= §currentWeatherUnd es ist §weather-codes-25.
+de_p_withoutDateDescription-25 = Â§withoutDateDescriptionWird Â§weather-codes-25 .
+de_p_overviewCode-25 = Â§overviewEs Â§weather-codes-25 .
+de_p_currentWeather-25= Â§currentWeatherUnd es ist Â§weather-codes-25.
 
 en_p_weather-codes-26=cloudy
 de_p_weather-codes-26=wolkig
-de_p_withoutDateDescription-26 = §withoutDateDescriptionWird §weather-codes-26 .
-de_p_overviewCode-26 = §overviewEs §weather-codes-26 .
-de_p_currentWeather-26= §currentWeatherUnd es ist §weather-codes-26 .
+de_p_withoutDateDescription-26 = Â§withoutDateDescriptionWird Â§weather-codes-26 .
+de_p_overviewCode-26 = Â§overviewEs Â§weather-codes-26 .
+de_p_currentWeather-26= Â§currentWeatherUnd es ist Â§weather-codes-26 .
 
 en_p_weather-codes-27=mostly cloudy (night)
 de_p_weather-codes-27=nachts meistens wolkig
-de_p_withoutDateDescription-27 = §withoutDateDescriptionWird §weather-codes-27 .
-de_p_overviewCode-27 = §overviewEs §weather-codes-27 .
-de_p_currentWeather-27= §currentWeatherUnd ist großteils bewölkt.
+de_p_withoutDateDescription-27 = Â§withoutDateDescriptionWird Â§weather-codes-27 .
+de_p_overviewCode-27 = Â§overviewEs Â§weather-codes-27 .
+de_p_currentWeather-27= Â§currentWeatherUnd ist groÃŸteils bewÃ¶lkt.
 
 en_p_weather-codes-28=mostly cloudy (day)
-de_p_weather-codes-28=tagsüber meistens wolkig
-de_p_weather-codes-28_1=tagsüber größtenteils wolkig
-de_p_withoutDateDescription-28 = §withoutDateDescriptionWird §weather-codes-28 .
-de_p_overviewCode-28 = §overviewEs §weather-codes-28 .
-de_p_currentWeather-28= §currentWeatherUnd es ist größtenteils wolkig.
+de_p_weather-codes-28=tagsÃ¼ber meistens wolkig
+de_p_weather-codes-28_1=tagsÃ¼ber grÃ¶ÃŸtenteils wolkig
+de_p_withoutDateDescription-28 = Â§withoutDateDescriptionWird Â§weather-codes-28 .
+de_p_overviewCode-28 = Â§overviewEs Â§weather-codes-28 .
+de_p_currentWeather-28= Â§currentWeatherUnd es ist grÃ¶ÃŸtenteils wolkig.
 
 en_p_weather-codes-29=partly cloudy (night)
 de_p_weather-codes-29=nachts teilweise wolkig
-de_p_withoutDateDescription-29 = §withoutDateDescriptionWird §weather-codes-29 .
-de_p_overviewCode-29 = §overviewEs §weather-codes-29 .
-de_p_currentWeather-29= §currentWeatherUnd ist etwas wolkig.
+de_p_withoutDateDescription-29 = Â§withoutDateDescriptionWird Â§weather-codes-29 .
+de_p_overviewCode-29 = Â§overviewEs Â§weather-codes-29 .
+de_p_currentWeather-29= Â§currentWeatherUnd ist etwas wolkig.
 
 en_p_weather-codes-30=partly cloudy (day)
-de_p_weather-codes-30=tagsüber teilweise wolkig
-de_p_withoutDateDescription-30 = §withoutDateDescriptionWird §weather-codes-30 .
-de_p_overviewCode-30 = §overviewEs §weather-codes-30 .
-de_p_currentWeather-30= §currentWeatherUnd ist ein bischen bewölkt.
+de_p_weather-codes-30=tagsÃ¼ber teilweise wolkig
+de_p_withoutDateDescription-30 = Â§withoutDateDescriptionWird Â§weather-codes-30 .
+de_p_overviewCode-30 = Â§overviewEs Â§weather-codes-30 .
+de_p_currentWeather-30= Â§currentWeatherUnd ist ein bischen bewÃ¶lkt.
 
 en_p_weather-codes-31=clear (night)
 de_p_weather-codes-31=nachts klar
-de_p_withoutDateDescription-31 = §withoutDateDescriptionWird §weather-codes-31 .
-de_p_overviewCode-31 = §overviewEs §weather-codes-31 .
-de_p_currentWeather-31= §currentWeatherUnd ist klar.
+de_p_withoutDateDescription-31 = Â§withoutDateDescriptionWird Â§weather-codes-31 .
+de_p_overviewCode-31 = Â§overviewEs Â§weather-codes-31 .
+de_p_currentWeather-31= Â§currentWeatherUnd ist klar.
 
 en_p_weather-codes-32=sunny
 de_p_weather-codes-32=sonnig
-de_p_withoutDateDescription-32 = §withoutDateDescriptionWird §weather-codes-32 .
-de_p_overviewCode-32 = §overviewEs §weather-codes-32 .
-de_p_currentWeather-32= §currentWeatherUnd ist §weather-codes-32 .
+de_p_withoutDateDescription-32 = Â§withoutDateDescriptionWird Â§weather-codes-32 .
+de_p_overviewCode-32 = Â§overviewEs Â§weather-codes-32 .
+de_p_currentWeather-32= Â§currentWeatherUnd ist Â§weather-codes-32 .
 
 en_p_weather-codes-33=fair (night)
 de_p_weather-codes-33=nachts heiter
-de_p_withoutDateDescription-33 = §withoutDateDescriptionWird §weather-codes-33 .
-de_p_overviewCode-33 = §overviewEs §weather-codes-33 .
-de_p_currentWeather-33= §currentWeatherUnd ist heiter .
+de_p_withoutDateDescription-33 = Â§withoutDateDescriptionWird Â§weather-codes-33 .
+de_p_overviewCode-33 = Â§overviewEs Â§weather-codes-33 .
+de_p_currentWeather-33= Â§currentWeatherUnd ist heiter .
 
 en_p_weather-codes-34=fair (day)
-de_p_weather-codes-34=tagsüber heiter
-de_p_withoutDateDescription-34 = §withoutDateDescriptionWird §weather-codes-34 .
-de_p_overviewCode-34 = §overviewEs §weather-codes-34 .
-de_p_currentWeather-34= §currentWeatherUnd ist heiter .
+de_p_weather-codes-34=tagsÃ¼ber heiter
+de_p_withoutDateDescription-34 = Â§withoutDateDescriptionWird Â§weather-codes-34 .
+de_p_overviewCode-34 = Â§overviewEs Â§weather-codes-34 .
+de_p_currentWeather-34= Â§currentWeatherUnd ist heiter .
 
 en_p_weather-codes-35=mixed rain and hail
 de_p_weather-codes-35=gemischten regen und hagel
-de_p_withoutDateDescription-35 = §withoutDateDescriptionWird regnen und hageln.
-de_p_overviewCode-35 = §overviewEs §weather-codes-35 geben.
-de_p_currentWeather-35= §currentWeatherGibt §weather-codes-35 .
+de_p_withoutDateDescription-35 = Â§withoutDateDescriptionWird regnen und hageln.
+de_p_overviewCode-35 = Â§overviewEs Â§weather-codes-35 geben.
+de_p_currentWeather-35= Â§currentWeatherGibt Â§weather-codes-35 .
 
 en_p_weather-codes-36=hot
-de_p_weather-codes-36=heiß
-de_p_withoutDateDescription-36 = §withoutDateDescriptionWird §weather-codes-36 .
-de_p_overviewCode-36 = §overviewEs §weather-codes-36 werden.
-de_p_currentWeather-36= §currentWeatherUnd es ist §weather-codes-36 .
+de_p_weather-codes-36=heiÃŸ
+de_p_withoutDateDescription-36 = Â§withoutDateDescriptionWird Â§weather-codes-36 .
+de_p_overviewCode-36 = Â§overviewEs Â§weather-codes-36 werden.
+de_p_currentWeather-36= Â§currentWeatherUnd es ist Â§weather-codes-36 .
 
 en_p_weather-codes-37=isolated thunderstorms
-de_p_weather-codes-37=örtliche Gewitter
-de_p_withoutDateDescription-37 = §withoutDateDescriptionWird §weather-codes-37 geben.
-de_p_overviewCode-37 = §overviewEs §weather-codes-37 geben.
-de_p_currentWeather-37= §currentWeatherGibt §weather-codes-37 .
+de_p_weather-codes-37=Ã¶rtliche Gewitter
+de_p_withoutDateDescription-37 = Â§withoutDateDescriptionWird Â§weather-codes-37 geben.
+de_p_overviewCode-37 = Â§overviewEs Â§weather-codes-37 geben.
+de_p_currentWeather-37= Â§currentWeatherGibt Â§weather-codes-37 .
 
 en_p_weather-codes-38=scattered thunderstorms
 de_p_weather-codes-38=vereinzelte Gewitter
-de_p_withoutDateDescription-38 = §withoutDateDescriptionWird §weather-codes-38 geben.
-de_p_overviewCode-38 = §overviewEs §weather-codes-38 geben.
-de_p_currentWeather-38= §currentWeatherGibt §weather-codes-38 .
+de_p_withoutDateDescription-38 = Â§withoutDateDescriptionWird Â§weather-codes-38 geben.
+de_p_overviewCode-38 = Â§overviewEs Â§weather-codes-38 geben.
+de_p_currentWeather-38= Â§currentWeatherGibt Â§weather-codes-38 .
 
 en_p_weather-codes-39=scattered thunderstorms
-de_p_weather-codes-39=§weather-codes-38
-de_p_withoutDateDescription-39 = §withoutDateDescription-38
-de_p_overviewCode-39 = §overviewCode-38
-de_p_currentWeather-39= §currentWeather-38 .
+de_p_weather-codes-39=Â§weather-codes-38
+de_p_withoutDateDescription-39 = Â§withoutDateDescription-38
+de_p_overviewCode-39 = Â§overviewCode-38
+de_p_currentWeather-39= Â§currentWeather-38 .
 
 en_p_weather-codes-40=scattered showers
-de_p_weather-codes-40=vereinzelte Regenfälle
-de_p_withoutDateDescription-40 = §withoutDateDescriptionWird §weather-codes-40 geben.
-de_p_overviewCode-40 = §overviewEs §weather-codes-40 geben.
-de_p_currentWeather-40= §currentWeatherGibt §weather-codes-40 .
+de_p_weather-codes-40=vereinzelte RegenfÃ¤lle
+de_p_withoutDateDescription-40 = Â§withoutDateDescriptionWird Â§weather-codes-40 geben.
+de_p_overviewCode-40 = Â§overviewEs Â§weather-codes-40 geben.
+de_p_currentWeather-40= Â§currentWeatherGibt Â§weather-codes-40 .
 
 en_p_weather-codes-41=heavy snow
-de_p_weather-codes-41=heftige Schneefälle
-de_p_withoutDateDescription-41 = §withoutDateDescriptionWird §weather-codes-41 geben.
-de_p_overviewCode-41 = §overviewEs §weather-codes-41 geben.
-de_p_currentWeather-41= §currentWeatherGibt §weather-codes-41 .
+de_p_weather-codes-41=heftige SchneefÃ¤lle
+de_p_withoutDateDescription-41 = Â§withoutDateDescriptionWird Â§weather-codes-41 geben.
+de_p_overviewCode-41 = Â§overviewEs Â§weather-codes-41 geben.
+de_p_currentWeather-41= Â§currentWeatherGibt Â§weather-codes-41 .
 
 en_p_weather-codes-42=scattered snow showers
 de_p_weather-codes-42=vereinzelte Schneeschauer
-de_p_withoutDateDescription-42 = §withoutDateDescriptionWird §weather-codes-42 geben.
-de_p_overviewCode-42 = §overviewEs §weather-codes-41 geben.
-de_p_currentWeather-42= §currentWeatherGibt §weather-codes-42 .
+de_p_withoutDateDescription-42 = Â§withoutDateDescriptionWird Â§weather-codes-42 geben.
+de_p_overviewCode-42 = Â§overviewEs Â§weather-codes-41 geben.
+de_p_currentWeather-42= Â§currentWeatherGibt Â§weather-codes-42 .
 
 en_p_weather-codes-43=heavy snow
-de_p_weather-codes-43=schwere Schneefälle
-de_p_withoutDateDescription-43 = §withoutDateDescriptionWird §weather-codes-43 geben.
-de_p_overviewCode-43 = §overviewEs §weather-codes-43 geben.
-de_p_currentWeather-43= §currentWeatherGibt §weather-codes-43 .
+de_p_weather-codes-43=schwere SchneefÃ¤lle
+de_p_withoutDateDescription-43 = Â§withoutDateDescriptionWird Â§weather-codes-43 geben.
+de_p_overviewCode-43 = Â§overviewEs Â§weather-codes-43 geben.
+de_p_currentWeather-43= Â§currentWeatherGibt Â§weather-codes-43 .
 
 en_p_weather-codes-44=partly cloudy
-de_p_weather-codes-44=teilweise bewölkt
-de_p_withoutDateDescription-44 = §withoutDateDescriptionWird §weather-codes-44 .
-de_p_overviewCode-44 = §overviewEs §weather-codes-44 werden.
-de_p_currentWeather-44= §currentWeatherUnd es ist §weather-codes-44 .
+de_p_weather-codes-44=teilweise bewÃ¶lkt
+de_p_withoutDateDescription-44 = Â§withoutDateDescriptionWird Â§weather-codes-44 .
+de_p_overviewCode-44 = Â§overviewEs Â§weather-codes-44 werden.
+de_p_currentWeather-44= Â§currentWeatherUnd es ist Â§weather-codes-44 .
 
 en_p_weather-codes-45=thundershowers
 de_p_weather-codes-45=Schauer
-de_p_withoutDateDescription-45 = §withoutDateDescriptionWird §weather-codes-45 geben.
-de_p_overviewCode-45 = §overviewEs §weather-codes-45 geben.
-de_p_currentWeather-45= §currentWeatherGibt §weather-codes-45 .
+de_p_withoutDateDescription-45 = Â§withoutDateDescriptionWird Â§weather-codes-45 geben.
+de_p_overviewCode-45 = Â§overviewEs Â§weather-codes-45 geben.
+de_p_currentWeather-45= Â§currentWeatherGibt Â§weather-codes-45 .
 
 en_p_weather-codes-46=snow showers
 de_p_weather-codes-46=Schneeschauer
-de_p_withoutDateDescription-46 = §withoutDateDescriptionWird §weather-codes-46 geben.
-de_p_overviewCode-46 = §overviewEs §weather-codes-46 geben.
-de_p_currentWeather-46= §currentWeatherGibt §weather-codes-46 .
+de_p_withoutDateDescription-46 = Â§withoutDateDescriptionWird Â§weather-codes-46 geben.
+de_p_overviewCode-46 = Â§overviewEs Â§weather-codes-46 geben.
+de_p_currentWeather-46= Â§currentWeatherGibt Â§weather-codes-46 .
 
 en_p_weather-codes-47=isolated thundershowers
 de_p_weather-codes-47=vereinzelte Schauer
-de_p_withoutDateDescription-47 = §withoutDateDescriptionWird §weather-codes-47 geben.
-de_p_overviewCode-47 = §overviewEs §weather-codes-47 geben.
-de_p_currentWeather-47= §currentWeatherGibt §weather-codes-47 .
+de_p_withoutDateDescription-47 = Â§withoutDateDescriptionWird Â§weather-codes-47 geben.
+de_p_overviewCode-47 = Â§overviewEs Â§weather-codes-47 geben.
+de_p_currentWeather-47= Â§currentWeatherGibt Â§weather-codes-47 .
 
 en_p_weather-codes-3200=not available
-de_p_weather-codes-3200=nicht verfügbar
-de_p_withoutDateDescription-3200 = Das Wetter ist nicht verfügbar.
-de_p_overviewCode-3200 = Das Wetter für §Day ist leider nicht verfügbar.
-de_p_currentWeather-3200= §currentWeatherGibt zurzeit leider keine genaueren Informationen .
+de_p_weather-codes-3200=nicht verfÃ¼gbar
+de_p_withoutDateDescription-3200 = Das Wetter ist nicht verfÃ¼gbar.
+de_p_overviewCode-3200 = Das Wetter fÃ¼r Â§Day ist leider nicht verfÃ¼gbar.
+de_p_currentWeather-3200= Â§currentWeatherGibt zurzeit leider keine genaueren Informationen .
