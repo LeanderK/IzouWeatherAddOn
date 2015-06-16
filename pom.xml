@@ -7,13 +7,13 @@
     <groupId>leanderk.izou.weatheraddon</groupId>
     <artifactId>weatheraddon</artifactId>
     <packaging>jar</packaging>
-    <version>1.1</version>
+    <version>1.2</version>
     <name>Leander Kurscheidt</name>
 
     <properties>
         <plugin.id>leanderk.izou.weatheraddon</plugin.id>
         <plugin.class>leanderk.izou.weatheraddon.ZipFileManager</plugin.class>
-        <plugin.version>1.1</plugin.version>
+        <plugin.version>1.2</plugin.version>
         <plugin.provider>Leander Kurscheidt</plugin.provider>
         <plugin.dependencies>leanderk.izou.tts</plugin.dependencies>
         <repo.name>IzouWeatherAddOn</repo.name>
